@@ -17,7 +17,8 @@ const Registration = (props) => {
     const handleInput = (e)=>{
         const name = e.target.name;//to see which input field is being targeted
         const value = e.target.value;//to get value of targeted input
-        setUserRegistration({...userRegistration, [name] : value}) // Setting value in the varialbles
+        setUserRegistration({...userRegistration, [name] : value}); // Setting value in the varialbles
+        console.log(userRegistration[name]);
     }
 
     const handleSubmit = (e)=>{

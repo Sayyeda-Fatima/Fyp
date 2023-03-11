@@ -38,6 +38,11 @@
 
 .item{
     font-family: 'Pacifico', cursive;
+    color: black;
+}
+
+.item-link{
+    text-decoration: none;
 }
 
 
@@ -45,4 +50,8 @@
 .test{
     background-color: black;
     color: white;
+}
+
+i{
+    padding-right: 10px;
 }

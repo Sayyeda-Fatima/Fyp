@@ -2,6 +2,7 @@ import React from "react";
 import './Login.css'
 import Navbar from "./Navbar";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Login = () => {
 
@@ -45,7 +46,9 @@ const Login = () => {
                     </div>
 
                     <div className="button">
-                        <input type="submit" name="login" value="Login" />
+                        <Link to='/inscrible'>
+                            <input type="submit" name="login" value="Login" />
+                        </Link>
                     </div>
                 </form>
             </div>
