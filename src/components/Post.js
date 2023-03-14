@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import './Post.css';
 import Sidebar from './Sidebar';
+import Loader from "./Loader";
  import {InscribleContext} from '../context/Context';
 
 
@@ -19,7 +20,7 @@ const Post = () => {
             <div className="container post-main-container">
                 {!isLoading ? 
                     postsArr
-                    : 'Loading....'}
+                    : <Loader/>}
             </div>
         </>
     )
